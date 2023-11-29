@@ -1,0 +1,27 @@
+<form action="${pageContext.request.contextPath}/repertory!chaxun" method="post">
+			<table align="center" style="margin-top: 20px;">
+				<tr>
+					<td><lable>姓名：</lable></td>
+					<td><input type="text" id="" name="repertoryName" value="${repertory.repertoryName }"/></td>
+					<td><input type="submit" class="btn btn-primary" value="查询" style="margin: 5px;"/></td>
+				</tr>		
+			</table>
+		</form>
+		
+		<div class="data_content">
+		<table class="table table-bordered table-hover">
+			<tr>
+				
+				<th>库存商品名称</th>
+				<th>库存商品数量</th>
+			</tr>
+		<tr>
+					
+					<td>${repertory.repertoryName }</td>
+					<td>${repertory.repertoryQuantity}</td>
+	
+				
+				</tr>
+
+		</table>
+	</div>
